@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <title>Nathalies Geburtstag</title>
-    <body>
-        <p id="demo"></p>
-        <script>
-            var deadline = new Date("Oct 16, 2022 00:00:00").getTime();
+var deadline = new Date("Oct 16, 2022 00:00:00").getTime();
 var x = setInterval(function() {
 var now = new Date().getTime();
 var t = deadline - now;
@@ -19,6 +13,3 @@ document.getElementById("demo").innerHTML = days + "d "
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
-        </script>
-    </body>
-</html>
